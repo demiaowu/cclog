@@ -1,0 +1,10 @@
+	cclog 
+
+					author:	demiaowu
+					email : cfreestar@163.com
+					date  : 2014-10-20
+	
+	cclog is a configurable and convenient module for log record.
+You can choose where the log output, stdout, stderr, 
+logfile, syslog or /dev/null. It support variable parameter for one function
+invocating.
