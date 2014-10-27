@@ -1,10 +1,14 @@
 /*
- * cc_config.h
+ * cc_settings.h
  *
  *  Created on: 2014年10月27日
  *      Author: demiaowu
  *      Email : cfreestar@163.com
  */
+
+
+#ifndef CC_SETTINGS_H_
+#define CC_SETTINGS_H_
 
 #include <errno.h>
 #include <assert.h>
@@ -15,6 +19,7 @@
 #include <fcntl.h>
 #include <time.h>
 #include <stdarg.h>
+#include <ctype.h>
 
 #ifdef HAVE_SYSYLOG_H
 #include <syslog.h>
@@ -26,6 +31,6 @@
 #include <arlgrind/arlgrind.h>
 #endif
 
-
+#endif /* CC_SETTINGS_H_ */
 
 

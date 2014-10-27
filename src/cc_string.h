@@ -8,7 +8,7 @@
 #ifndef CC_STRING_H_
 #define CC_STRING_H_
 
-#include "cc_config.h"
+#include "cc_string.h"
 
 #define CC_LOG_STR_PIECE_SIZE 64
 

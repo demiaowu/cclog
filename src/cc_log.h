@@ -9,7 +9,7 @@
 #ifndef CC_LOG_H_
 #define CC_LOG_H_
 
-#include "cc_config.h"
+#include "cc_settings.h"
 
 
 
@@ -34,10 +34,11 @@ typedef enum {
 }cc_log_mode_t;
 
 
-typedef struct cc_log_node {
+typedef struct {
 	cc_log_mode_t log_mode;		/*cc_log mode*/
 	int   log_fd;			/*cc_log file descriptor*/
 	char* log_str;			/*the string(char *) of the log*/
+	config_values_t *cv;
 }cc_log_t;
 
 
@@ -49,6 +50,8 @@ typedef struct cc_log_node {
 int open_dev_null(int log_fd);
 
 cc_log_t* cc_log_init();
+
+int cc_log_free(cc_log_t *p_cc_log);
 
 /*Init the cclog by configuration file of cclog.conf,
  * include set the log mode and the file for record the log.

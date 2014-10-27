@@ -2,13 +2,14 @@
  * cc_stream.h
  *
  *  Created on: 2014年10月27日
- *      Author: Administrator
+ *      Author: demiaowu
+ *      Email : cfreestar@163.com
  */
 
 #ifndef CC_STREAM_H_
 #define CC_STREAM_H_
 
-#include "cc_config.h"
+#include "cc_settings.h"
 #include "cc_string.h"
 
 typedef struct {

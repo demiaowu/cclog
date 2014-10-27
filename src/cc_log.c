@@ -23,6 +23,18 @@ cc_log_t* cc_log_init()
 	return p_cc_log;
 }
 
+int cc_log_free(cc_log_t *p_cc_log)
+{
+	if (NULL != p_cc_log) {
+		if (NULL != p_cc_log->cv)
+			free(p_cc_log->cv);
+		if (NULL != p_cc_log->log_str)
+			free(p_cc_log->log_str);
+	}
+
+	return -1;
+}
+
 
 /*Close the cc_log_fd and try to get a /dev/null/ for it instead.
  *
